@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/pp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profildefault"
+            android:tint="@android:color/holo_red_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:id="@+id/nama"
+            android:textAlignment="center"
+            android:layout_below="@id/pp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Telpon"
+            android:id="@+id/notelp"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/nama"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_ep"
+            android:text="EDIT PROFIL"
+            android:layout_below="@+id/notelp"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_lo"
+            android:text="LOGOUT"
+            android:layout_below="@id/notelp"
+            android:layout_toRightOf="@id/btn_ep"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+</FrameLayout>
